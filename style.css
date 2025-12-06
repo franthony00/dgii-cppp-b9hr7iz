@@ -1,0 +1,155 @@
+/* =============================
+   ESTILOS GENERALES
+   ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px; 
+}
+
+/* =============================
+   HEADER
+   ============================= */
+#header {
+    background-color: #7daf18;
+    padding: 4% 4.5%;              /* 🔽 Reducido para expandir el cuadro verde */
+    border-bottom: 0.4em solid #2d2d2d; /* También lo hago un poco más fino */
+    margin-top: 1px;
+}
+
+
+/* Imagen del encabezado (PLACA PROVISIONAL) */
+#header img {
+    width: 2%;          /* 🔽 Reduce el tamaño general (antes 45%) */
+    max-width: 150px !important;    /* 🔽 Limita el tamaño máximo en pantallas grandes */
+    height: auto;        /* Mantiene proporción correcta */
+    display: block;
+}
+
+
+/* =============================
+   TITULOS
+   ============================= */
+#title {
+    padding: 4% 5% 0.5% 5%;
+}
+
+
+/* =============================
+   TITULOS EXACTOS DGII
+   ============================= */
+.title-orange {
+    color: #d58f00;
+    font-size: 1.17em !important;  /* 🔽 Reducido para evitar salto de línea */
+   font-weight: bold;
+    display: block;
+    margin-bottom: 0.15em;
+}
+
+.title-green {
+    color: #4b8101;
+    font-size: 1.55em !important; /* 🔽 Reducido para evitar salto de línea */
+    display: block;
+    white-space: nowrap;          /* 🔒 Mantiene todo en una línea */
+    line-height: 1.1em;           /* 🔽 Reduce la altura vertical */
+    margin-bottom: 0.4em;         /* Un poco más de espacio hacia abajo */
+}
+
+/* =============================
+   CONTENIDO
+   ============================= */
+/* ========================================
+   CONTENEDOR DEL CONTENIDO - TAMAÑO GENERAL
+   ======================================== */
+#content {
+    padding: 0.5% 3% 5% 5%;
+    font-size: 0.8em;     /* 🔥 Tamaño REAL similar al DGII */
+    background: white;
+}
+
+/* ========================================
+   TABLA PRINCIPAL DGII (AJUSTADA 1:1)
+   ======================================== */
+.data_table {
+    width: 100%;              /* ocupa todo el ancho */
+    border-collapse: collapse; /* elimina espacios entre celdas */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.data_table tr {
+    border-bottom: 0.3px solid #ccc; /* línea delgada entre filas, igual a DGII */
+}
+
+/* ========================================
+   CELDAS GENERALES
+   ======================================== */
+.data_table td {
+    padding: 15px 12px;        /* 🔥 MUCHÍSIMO MÁS PEQUEÑO QUE ANTES */
+    vertical-align: middle;
+    font-size: 20px;       /* 🔥 Tamaño idéntico al DGII */
+}
+
+/* ========================================
+   COLUMNA IZQUIERDA (GRIS)
+   ======================================== */
+.left-col {
+    background-color: #efefef;   /* Color de fondo gris claro (como DGII) */
+    width: 30%;                   /* Ocupa el 38% del ancho total de la tabla */
+    padding: 20px 12px;           /* Espacio interno (alto y lados) para que el texto no esté pegado */
+    font-size: 20px;            /* Tamaño del texto (igual al estilo original DGII) */
+     
+   
+}
+
+
+/* ========================================
+   COLUMNA DERECHA
+   ======================================== */
+.right-col {
+    width: 62%;
+    padding: 18px 12px;
+    font-size: 1.05em;
+    color: #676767;
+}
+
+
+
+/* =============================
+   FOOTER
+   ============================= */
+#footer {
+    padding: 15px 5% !important;   /* 🔽 más compacto y alineado */
+    font-size: 1.02em !important;   /* 🔽 texto más pequeño */
+    background: #cfcfcf;
+    color: #3a3a3a;
+    text-align: left;
+}
+
+/* =============================
+   RESPONSIVE
+   ============================= */
+@media (max-width: 600px) {
+
+    #header img {
+        width: 70%;
+    }
+
+    .title-orange { font-size: 16px; }
+    .title-green { font-size: 19px; }
+
+    .left-col, .right-col {
+        padding: 6px;
+        font-size: 6px;
+    }
+
+    #footer {
+        font-size: 7px;
+    }
+}
+
